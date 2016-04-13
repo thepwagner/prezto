@@ -24,3 +24,4 @@ esac
 export VISUAL=/usr/bin/vim
 export EDITOR=/usr/bin/vim
 
+[ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
