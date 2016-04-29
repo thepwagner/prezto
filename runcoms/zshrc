@@ -15,9 +15,6 @@ fi
 case `uname` in
 	Darwin)
 		export JAVA_HOME=/Library/Java/JavaVirtualMachines/jdk1.8.0_77.jdk/Contents/Home
-		if which docker-machine >/dev/null 2>&1; then
-			eval $(docker-machine env docker-vm)
-		fi
 		;;
 esac
 
