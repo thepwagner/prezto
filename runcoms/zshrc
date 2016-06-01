@@ -11,7 +11,6 @@ if [[ -s "${ZDOTDIR:-$HOME}/.zprezto/init.zsh" ]]; then
 fi
 
 # Customize to your needs...
-
 case `uname` in
 	Darwin)
 		export JAVA_HOME=/Library/Java/JavaVirtualMachines/jdk1.8.0_77.jdk/Contents/Home
@@ -22,3 +21,9 @@ export VISUAL=/usr/bin/vim
 export EDITOR=/usr/bin/vim
 
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
+
+if which rbenv >/dev/null 2>&1; then
+	eval "$(rbenv init -)"
+fi
+
+export PATH=$HOME/bin:$PATH
